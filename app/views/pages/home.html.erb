@@ -1,0 +1,36 @@
+<% if user_signed_in? %>
+    <div class="jumbotron jumbotron-home">
+        <div class="container">
+            <h1>Welcome Back!</h1>
+        </div>
+    </div>
+<% else %>
+<div class="jumbotron jumbotron-home">
+    <div class="container">
+        <h1>Welcome to my website!</h1>
+        <p>This is project rails, this is my first Ruby on Rails project that is a prototype to secure funding.</p>
+        <%= link_to "Learn more »", "#", class: "btn btn-primary btn-lg" %> 
+            %>
+        <% end %>
+    </div>
+</div>
+<div class="container">
+    <div class="row">
+        <div class="col-md-4">
+            <h2>Heading</h2>
+            <p>World class HRIS system that will help governements with complainace. </p>
+            <p><%= link_to "View details", "#", class: "btn btn-secondary" %></p>
+        </div>
+        <div class="col-md-4">
+            <h2>Heading</h2>
+            <p>OHS system that integrates into HRIS. </p>
+            <p><%= link_to "View details", "#", class: "btn btn-secondary" %></p>
+        </div>
+        <div class="col-md-4">
+            <h2>Heading</h2>
+            <p>IT asset tracking that will integrate with HRIS. </p>
+            <p><%= link_to "View details", "#", class: "btn btn-secondary" %></p>
+        </div>
+    </div>
+</div>
+
